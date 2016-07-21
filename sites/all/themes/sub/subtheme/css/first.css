@@ -1,0 +1,265 @@
+/* colors */
+/*font style */
+/* font size */
+/* line 28, ../sass/first.scss */
+body {
+  background-color: #222222;
+  background: url("../images/Education.jpg");
+  background-repeat: repeat-y;
+}
+
+/* line 34, ../sass/first.scss */
+p {
+  color: #DCDCDC;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+
+/* line 40, ../sass/first.scss */
+h1 {
+  color: #FF8C00;
+  font-family: calibri;
+  text-transform: capitalize;
+}
+
+/* line 45, ../sass/first.scss */
+.link a {
+  color: #6BDAEA;
+}
+
+/* line 48, ../sass/first.scss */
+a:hover {
+  color: orange;
+}
+
+/* line 58, ../sass/first.scss */
+.input-group {
+  display: none;
+}
+
+/* line 61, ../sass/first.scss */
+#first-time li {
+  color: white;
+}
+/* line 63, ../sass/first.scss */
+#first-time li a {
+  color: #FF8C00;
+}
+
+/* line 67, ../sass/first.scss */
+.page-header {
+  color: #00BCD4;
+}
+
+/* line 74, ../sass/first.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #FF8C00;
+}
+
+/* line 78, ../sass/first.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #cc;
+  font-family: calibri;
+}
+
+/* line 83, ../sass/first.scss */
+.block-title {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #FF8C00;
+  font-family: calibri;
+}
+
+/* line 91, ../sass/first.scss */
+.navbar-collapse nav ul:first-of-type {
+  background-color: #ececec;
+  border-radius: 4px;
+}
+/* line 96, ../sass/first.scss */
+.navbar-collapse nav ul:last-of-type li a {
+  color: white;
+}
+
+/* line 101, ../sass/first.scss */
+.name.navbar-brand {
+  color: white;
+  font-family: calibri;
+  font-size: 2em;
+}
+/* line 105, ../sass/first.scss */
+.name.navbar-brand:hover {
+  color: #FF8C00;
+}
+
+/* line 109, ../sass/first.scss */
+.navbar {
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+/* line 114, ../sass/first.scss */
+.block-title {
+  font-size: 23px;
+  color: black;
+  font-family: calibri;
+}
+
+/* line 120, ../sass/first.scss */
+#block-school-my-block ul {
+  color: #FF8C00;
+}
+/* line 122, ../sass/first.scss */
+#block-school-my-block ul li a {
+  color: black;
+}
+/* line 125, ../sass/first.scss */
+#block-school-my-block ul a:hover {
+  color: #FF8C00;
+}
+
+/* line 129, ../sass/first.scss */
+#block-system-navigation li {
+  color: black;
+}
+
+/* line 133, ../sass/first.scss */
+.region.region-sidebar-first.well {
+  background-color: #EDEDED;
+  border: 0;
+  font-weight: initial;
+  font-size: 1.1em;
+}
+
+/* line 139, ../sass/first.scss */
+.contextual-links-wrapper + ul {
+  color: #ffa333;
+  font-family: calibri;
+}
+/* line 142, ../sass/first.scss */
+.contextual-links-wrapper + ul li a {
+  color: black;
+}
+/* line 145, ../sass/first.scss */
+.contextual-links-wrapper + ul a:hover {
+  color: #FF8C00;
+}
+
+/* line 157, ../sass/first.scss */
+.title.comment-form {
+  color: #6BDAEA;
+}
+
+/* line 160, ../sass/first.scss */
+.comment-form {
+  color: orange;
+}
+
+/* line 163, ../sass/first.scss */
+.username {
+  color: #6BDAEA;
+}
+
+/* line 166, ../sass/first.scss */
+.submitted {
+  color: orange;
+}
+
+/* line 169, ../sass/first.scss */
+.nav-tabs > li > a {
+  color: white;
+}
+/* line 171, ../sass/first.scss */
+.nav-tabs > li > a:hover {
+  color: #FF8C00;
+}
+
+/* line 177, ../sass/first.scss */
+.menu.nav li a {
+  color: #000;
+}
+/* line 180, ../sass/first.scss */
+.menu.nav li a:hover {
+  color: orange;
+}
+
+/* second page */
+/* line 190, ../sass/first.scss */
+.col-sm-9 {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  font-family: calibri;
+  font-size: 1.2em;
+}
+
+/* line 196, ../sass/first.scss */
+.col-sm-12 {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+/* line 200, ../sass/first.scss */
+.btn-success {
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+/* line 205, ../sass/first.scss */
+.node-unpublished {
+  background-color: transparent;
+}
+
+/* create news page */
+/* line 209, ../sass/first.scss */
+.node-form {
+  color: #FF8C00;
+}
+
+/* line 212, ../sass/first.scss */
+.vertical-tabs-list li a {
+  color: white;
+}
+/* line 214, ../sass/first.scss */
+.vertical-tabs-list li a:hover {
+  color: #FF8C00;
+}
+
+/* front page */
+/* line 219, ../sass/first.scss */
+.node-type-list dt a {
+  color: #FF8C00;
+}
+/* line 221, ../sass/first.scss */
+.node-type-list dt a:hover {
+  color: white;
+}
+
+/* image */
+/* line 226, ../sass/first.scss */
+.field .field-label {
+  font-weight: bold;
+  color: white;
+}
+
+/* anonymous */
+/* line 233, ../sass/first.scss */
+.menu.nav.navbar-nav li a:hover {
+  color: #FF8C00;
+}
+
+/* access denied */
+/* footer */
+/* line 243, ../sass/first.scss */
+.contextual-links-wrapper + p {
+  color: red;
+  font-size: 1.1em;
+  font-family: Josefin Slab;
+}
+
+/* pager */
+/* line 251, ../sass/first.scss */
+.pagination li.active span:hover {
+  background-color: #6BDAEA;
+}

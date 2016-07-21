@@ -1,0 +1,101 @@
+<?php
+module_load_include('inc', 'school', 'block');
+  function school_menu() {
+    $items['school/examples/news'] = array(
+      'title' => 'News Articles' ,
+      'description' => 'news article using teaser.' ,
+      'page callback' => 'news_teaser_view' ,
+      'access callback' => TRUE ,
+      //'access arguments' => array('my article page'),
+      'file' => 'Teaser.inc' ,
+      );
+
+    $items['school/essential/essential'] = array(
+      'title' => 'Teacher Essential' ,
+      'description' => 'essential using teaser.' ,
+      'page callback' => 'essential_teaser_view' ,
+      'access callback' => TRUE ,
+      // 'access arguments' => array('my essential page'),
+      'file' => 'essential.inc' ,
+      );
+
+      $items['school/myarticle/news'] = array(
+      'title' => 'My Articles' ,
+      'description' => 'My article using teaser.' ,
+      'page callback' => 'news_my_view' ,
+      'access arguments' => array('my article page'),
+      'file' => 'myarticle.inc' ,
+      );
+       $items['school/myessential/essential'] = array(
+      'title' => 'My Essential' ,
+      'description' => 'My essential using teaser.' ,
+      'page callback' => 'essential_my_view' ,
+      'access arguments' => array('my essential page'),
+      'file' => 'myessential.inc' ,
+      );
+
+
+    return $items;
+  }
+
+
+  function school_theme() {
+    return array(
+      'Teaser' => array(
+        'template' => 'teaser_theme',
+        'arguments' => array(
+          'variables' => NULL,
+        ),
+      ),
+    );
+  }
+
+   function school_permission() {
+    return array(
+      'my article page' => array(
+      'title' => t('permission for teachers my articles page module'),
+      'description' => t('apply student role permission for page'),
+
+      ),
+      'my essential page' => array(
+      'title' => t('permission for teachers my essential page module'),
+      'description' => t('apply student role permission for page'),
+
+      ),
+    );
+  }
+
+  function school_block_info() {
+    $block = array();
+    $block['my_block'] = array(
+      'info' => t('school Custom Block'),
+      );
+    return $block;
+  }
+
+  function school_block_view($delta = '') {
+   // global $base_url;
+    $blocks = array();
+    switch ($delta) {
+      case 'my_block':
+        $blocks['subject'] = t('Top Articles');
+        // $blocks['content'] = t('asdfghjklzxcvbnm');
+        // $path = drupal_get_path_alias();
+           $path = current_path();
+       // dpm($base_url);
+        // dpm($path);
+        if($path == 'school/myarticle/news' || $path == 'school/examples/news' || $path == 'node'){
+          $shy = 'news';
+          // $args = explode('/', $path);
+          // $shy = $args[2];
+
+        }
+        else if($path == 'school/myessential/essential' || $path == 'school/essential/essential') {
+          // $args = explode('/', $path);
+          $shy = 'essential';
+        }
+        $blocks['content'] = myblock_view($shy);
+        break;
+    }
+    return $blocks;
+  }

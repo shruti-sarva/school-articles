@@ -1,0 +1,253 @@
+/* colors */
+$primaryColor: #eeffcc;
+$background:url('../images/Education.jpg');
+$site-name:white;
+$menu-color:#FF8C00;
+$pageHeader: #00BCD4;
+$para:#DCDCDC;
+$heading:#FF8C00;
+$readmore:#6BDAEA;
+$read-more-hover:orange;
+$block-title:black;
+$block-bg:#EDEDED;
+$block-link:#ffa333;
+$link-bg:black;
+$link-hover:#FF8C00;
+$user:#6BDAEA;
+$comment-detail:orange;
+$addComment:#6BDAEA;
+$save:orange;
+/*font style */
+$font:Josefin Slab;
+$calibri:calibri;
+
+/* font size */
+$site-name-size:2em;
+$block-links:1.1em;
+
+  body {
+         $primaryColor:#222222;
+         background-color: $primaryColor;
+         background: $background;
+         background-repeat: repeat-y;
+        }
+  p {
+      color:$para;
+      padding-top:10px;
+      text-transform: capitalize;
+    }
+
+  h1 {
+      color:$heading;
+      font-family:$calibri;
+      text-transform: capitalize;
+  }
+  .link a {
+            color:$readmore ;
+            }
+            a:hover {
+                color:$read-more-hover;
+              }
+
+  .new-artical-page{
+  // background-color: rgba(0,0,0,0.75);
+  // padding:12px;
+  // font-size:20px;
+
+                   }
+  .input-group {
+    display:none;
+  }
+  #first-time li {
+    color:white;
+    a{
+      color:$menu-color;
+    }
+  }
+  .page-header {
+    color:$pageHeader;
+
+  }
+// .container {
+//   color:black;
+// }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color:$menu-color;
+    }
+    .navbar-default .navbar-nav > li > a {
+    color: #cc;
+    // font-size: 1.2em;
+    font-family: $calibri;
+  }
+  .block-title {
+    padding-bottom: 5px;
+    margin-bottom:5px;
+    border-bottom: 1px solid $menu-color;
+    font-family: $calibri;
+  }
+  .navbar-collapse {
+    nav{
+      ul:first-of-type
+      {
+          background-color: #ececec;
+    border-radius: 4px;
+      }
+      ul:last-of-type li a{
+     color:white;
+      }
+    }
+  }
+  .name.navbar-brand{
+    color:$site-name;
+    font-family:$calibri;
+    font-size:$site-name-size;
+    &:hover{
+      color:$menu-color;
+    }
+  }
+  .navbar{
+      margin-top: 20px;
+      background-color: transparent;
+      border: none;
+}
+  .block-title {
+    font-size: 23px;
+    color:$block-title;
+    font-family:calibri;
+
+  }
+  #block-school-my-block ul {
+    color:$menu-color;
+   li a {
+      color:black;
+    }
+    a:hover{
+      color:$menu-color;
+    }
+  }
+  #block-system-navigation li {
+    color:black;
+  }
+
+  .region.region-sidebar-first.well {
+    background-color:$block-bg;
+    border:0;
+    font-weight: initial;
+    font-size:$block-links;
+   }
+  .contextual-links-wrapper + ul {
+    color: $block-link;
+    font-family:$calibri;
+      li a {
+            color:$link-bg;
+           }
+      a:hover {
+             color: $link-hover;
+             }
+   }
+
+  // .leaf.active{
+  //   color:black;
+  // }
+// .line {
+//   color:#6BDAEA;
+//   padding-top: 5px;
+// }
+  .title.comment-form {
+      color:$addComment;
+    }
+  .comment-form {
+    color:$comment-detail;
+  }
+  .username {
+    color:$user;
+  }
+  .submitted {
+    color:orange;
+  }
+  .nav-tabs > li > a {
+    color:white;
+    &:hover{
+      color:$menu-color;
+    }
+  }
+
+  .menu.nav {
+    li a {
+      color: #000;
+
+      &:hover {
+        color:orange;
+        // background-color:black;
+      }
+    }
+  }
+
+
+/* second page */
+
+  .col-sm-9 {
+    background-color: rgba(0,0,0,0.7);
+    padding:20px;
+    font-family:$calibri;
+    font-size:1.2em;
+  }
+  .col-sm-12{
+    background-color: rgba(0,0,0,0.7);
+    padding:20px;
+  }
+  .btn-success {
+    background-color:$save;
+    color:white;
+    border:none;
+  }
+  .node-unpublished {
+    background-color:transparent;
+  }
+/* create news page */
+  .node-form {
+    color:$menu-color;
+  }
+  .vertical-tabs-list li a{
+    color:white;
+    &:hover{
+      color:$menu-color;
+    }
+  }
+/* front page */
+  .node-type-list dt a{
+    color:$menu-color;
+    &:hover{
+      color:white;
+    }
+  }
+/* image */
+  .field .field-label {
+      font-weight: bold;
+      color: white;
+  }
+/* anonymous */
+.menu.nav.navbar-nav li a{
+  // color:;
+   &:hover{
+    color:$menu-color;
+   }
+}
+/* access denied */
+//  .region-content{
+//   color:$menu-color;
+// }
+/* footer */
+
+.contextual-links-wrapper + p  {
+  color:red;
+  font-size:1.1em;
+  font-family:$font;
+}
+
+/* pager */
+
+.pagination li.active span:hover{
+  background-color:$readmore;
+}
